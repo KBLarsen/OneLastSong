@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneLastSong", "OneLastSong\OneLastSong.csproj", "{0C104E1B-7291-4E68-95AF-1C20BF33619D}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SleepTimer", "OneLastSong\SleepTimer.csproj", "{0C104E1B-7291-4E68-95AF-1C20BF33619D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace OneLastSong.Commands
+namespace SleepTimer.Commands
 {
     public class Restart : ICommand
     {

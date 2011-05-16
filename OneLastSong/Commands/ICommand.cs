@@ -1,4 +1,4 @@
-﻿namespace OneLastSong.Commands
+﻿namespace SleepTimer.Commands
 {
     public interface ICommand
     {

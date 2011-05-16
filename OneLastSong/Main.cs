@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Threading;
 using System.Windows.Forms;
-using OneLastSong.Commands;
+using SleepTimer.Commands;
+using SleepTimer.Properties;
 
-namespace OneLastSong
+namespace SleepTimer
 {
     public partial class Main : Form
     {
@@ -25,8 +26,11 @@ namespace OneLastSong
 
         private void OnLoad(object sender, EventArgs e)
         {
+            
+            Time.Text = SleepTimer.Properties.Settings.Default.DefaultCountDownTime.TotalMinutes.ToString();
             Time.Focus();
-            Options.SelectedIndex = 0;
+            Options.SelectedIndex = SleepTimer.Properties.Settings.Default.DefaultAction;
+            DisableMonitor.Checked = SleepTimer.Properties.Settings.Default.DefaultMonitorTurnOff;
         }
 
         private void OnGoClick(object sender, EventArgs e)
@@ -68,7 +72,13 @@ namespace OneLastSong
 
         private void SetTimeRemaining()
         {
-            TimeRemaining.Text = string.Format("{0:00}:{1:00}", countdown.TimeRemaining.Minutes, countdown.TimeRemaining.Seconds);
+            string HoursRemaining = "";
+            int RemainingTotalWholeHours = (int)Math.Truncate(countdown.TimeRemaining.TotalHours);
+            if (RemainingTotalWholeHours > 0)
+            {
+                HoursRemaining = string.Format("{0}:", RemainingTotalWholeHours);
+            }
+            TimeRemaining.Text = HoursRemaining + string.Format("{0:00}:{1:00}", countdown.TimeRemaining.Minutes, countdown.TimeRemaining.Seconds);
         }
 
         private void OnFiveMoreMinutesClick(object sender, EventArgs e)

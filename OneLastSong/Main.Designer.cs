@@ -1,4 +1,4 @@
-﻿namespace OneLastSong
+﻿namespace SleepTimer
 {
     partial class Main
     {
@@ -167,7 +167,7 @@
             this.MaximizeBox = false;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "One Last Song by MJones";
+            this.Text = "SleepTimer";
             this.Load += new System.EventHandler(this.OnLoad);
             this.ResumeLayout(false);
             this.PerformLayout();

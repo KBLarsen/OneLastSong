@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace OneLastSong
+namespace SleepTimer
 {
     // TODO: Can we be more explicit that this countdown resolution is seconds? The IsExpired getter is a workaround.
     public class Countdown

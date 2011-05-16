@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OneLastSong
+namespace SleepTimer
 {
     public static class ThreadExtensions
     {

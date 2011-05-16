@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace OneLastSong.Commands
+namespace SleepTimer.Commands
 {
     public class PowerOffMonitor : ICommand
     {

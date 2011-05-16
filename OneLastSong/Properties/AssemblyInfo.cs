@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("OneLastSong")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("SleepTimer")]
+[assembly: AssemblyDescription("Countdown timer to make pc sleep")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OneLastSong")]
-[assembly: AssemblyCopyright("Copyright ©  2010")]
+[assembly: AssemblyCompany("https://github.com/AnthonyMastrean/OneLastSong")]
+[assembly: AssemblyProduct("SleepTimer aka OneLastSong")]
+[assembly: AssemblyCopyright("Copyright ©  2010-2011")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

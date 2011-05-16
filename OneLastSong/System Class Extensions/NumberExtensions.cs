@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace OneLastSong
+namespace SleepTimer
 {
     public static class NumberExtensions
     {

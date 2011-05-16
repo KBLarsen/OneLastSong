@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace OneLastSong.Commands
+namespace SleepTimer.Commands
 {
     public class Standby : ICommand
     {
