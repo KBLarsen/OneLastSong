@@ -86,5 +86,10 @@ namespace SleepTimer
             countdown.IncreaseDuration(TimeSpan.FromMinutes(5));
             SetTimeRemaining();
         }
+
+        private void DoItNowButton_Click(object sender, EventArgs e)
+        {
+            ExecuteCommand();
+        }
     }
 }

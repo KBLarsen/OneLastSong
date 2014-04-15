@@ -32,6 +32,7 @@
             this.TimeRemaining = new System.Windows.Forms.Label();
             this.FiveMoreMinutes = new System.Windows.Forms.Button();
             this.DisableMonitor = new System.Windows.Forms.CheckBox();
+            this.DoItNowButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGo
@@ -139,12 +140,23 @@
             this.DisableMonitor.Text = "Turn off my monitor too";
             this.DisableMonitor.UseVisualStyleBackColor = true;
             // 
+            // DoItNowButton
+            // 
+            this.DoItNowButton.Location = new System.Drawing.Point(174, 180);
+            this.DoItNowButton.Name = "DoItNowButton";
+            this.DoItNowButton.Size = new System.Drawing.Size(75, 23);
+            this.DoItNowButton.TabIndex = 8;
+            this.DoItNowButton.Text = "Do it now";
+            this.DoItNowButton.UseVisualStyleBackColor = true;
+            this.DoItNowButton.Click += new System.EventHandler(this.DoItNowButton_Click);
+            // 
             // Main
             // 
             this.AcceptButton = this.btnGo;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(253, 233);
+            this.Controls.Add(this.DoItNowButton);
             this.Controls.Add(this.DisableMonitor);
             this.Controls.Add(this.FiveMoreMinutes);
             this.Controls.Add(this.TimeRemaining);
@@ -179,5 +191,6 @@
         private System.Windows.Forms.Label TimeRemaining;
         private System.Windows.Forms.Button FiveMoreMinutes;
         private System.Windows.Forms.CheckBox DisableMonitor;
+        private System.Windows.Forms.Button DoItNowButton;
     }
 }
