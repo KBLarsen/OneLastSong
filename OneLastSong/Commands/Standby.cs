@@ -2,14 +2,12 @@
 
 namespace SleepTimer.Commands
 {
-    public class Standby : ICommand
+    public class Standby : ApplicationSetSuspendStateCommand
     {
-        private readonly bool force = true;
-        private readonly bool disableWakeEvent = true;
-
-        public void Execute()
+        public Standby()
+            : base(PowerState.Suspend, true, true)
         {
-            Application.SetSuspendState(PowerState.Suspend, force, disableWakeEvent);
         }
     }
+
 }

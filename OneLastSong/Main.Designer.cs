@@ -2,8 +2,15 @@
 {
     partial class Main
     {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -52,9 +59,10 @@
             this.Time.Location = new System.Drawing.Point(47, 11);
             this.Time.Multiline = true;
             this.Time.Name = "Time";
-            this.Time.Size = new System.Drawing.Size(154, 25);
+            this.Time.Size = new System.Drawing.Size(70, 25);
             this.Time.TabIndex = 0;
             this.Time.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Time.TextChanged += new System.EventHandler(this.Time_TextChanged);
             // 
             // Options
             // 
@@ -82,10 +90,9 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(206, 15);
+            this.label2.Location = new System.Drawing.Point(123, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.Size = new System.Drawing.Size(121, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "minutes";
             // 
@@ -182,7 +189,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnGo;
-        private System.Windows.Forms.TextBox Time;
         private System.Windows.Forms.ComboBox Options;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -191,6 +197,7 @@
         private System.Windows.Forms.Label TimeRemaining;
         private System.Windows.Forms.Button FiveMoreMinutes;
         private System.Windows.Forms.CheckBox DisableMonitor;
+        private System.Windows.Forms.TextBox Time;
         private System.Windows.Forms.Button DoItNowButton;
     }
 }

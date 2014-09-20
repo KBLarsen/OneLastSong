@@ -2,14 +2,12 @@
 
 namespace SleepTimer.Commands
 {
-    public class Shutdown : ICommand
+    public class Shutdown : ProcessShutdownCommand
     {
-        private readonly string shutdownCommand = "shutdown";
-        private readonly string shutdownWithoutWaitingArgs = "/s /t 0";
-
-        public void Execute()
+        // string shutdownWithoutWaitingArgs = "/s /t 0";
+        public Shutdown()
+            : base("/s /t 0")
         {
-            Process.Start(shutdownCommand, shutdownWithoutWaitingArgs);
         }
     }
 }

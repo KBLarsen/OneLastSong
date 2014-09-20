@@ -8,23 +8,26 @@ namespace SleepTimer.Commands
         [DllImport("user32.dll")]
         static extern IntPtr SendMessage(IntPtr hWnd, uint Msg, IntPtr wParam, IntPtr lParam);
 
-        private const uint SystemCommand = 0x0112;
-
-        private readonly IntPtr MonitorPower = (IntPtr)0xF170;
-        
-        private readonly IntPtr Off = (IntPtr)2;
-        private readonly IntPtr Standby = (IntPtr)1;
-
-        private readonly IntPtr controlHandle;
-
-        public PowerOffMonitor(IntPtr controlHandle)
+        public enum MonitorPowerState
         {
-            this.controlHandle = controlHandle;
+            StandBy = 1,
+            Off = 2
         }
 
-        public void Execute()
+        private readonly IntPtr hWnd;
+
+        public PowerOffMonitor(IntPtr hWnd)
         {
-            SendMessage(controlHandle, SystemCommand, MonitorPower, Off);
+            this.hWnd = hWnd;
+        }
+
+        public void Execute() 
+        { 
+            const uint SystemCommand = 0x0112;
+
+            IntPtr MonitorPower = (IntPtr)0xF170;
+
+            SendMessage(hWnd, SystemCommand, MonitorPower, (IntPtr)MonitorPowerState.Off);
         }
     }
 }

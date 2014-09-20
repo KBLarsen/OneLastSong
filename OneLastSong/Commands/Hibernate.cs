@@ -2,14 +2,11 @@
 
 namespace SleepTimer.Commands
 {
-    public class Hibernate : ICommand
+    public class Hibernate : ApplicationSetSuspendStateCommand
     {
-        private readonly bool force = true;
-        private readonly bool disableWakeEvent = true;
-
-        public void Execute()
+        public Hibernate()
+            : base(PowerState.Hibernate, true, false)
         {
-            Application.SetSuspendState(PowerState.Hibernate, force, disableWakeEvent);
         }
     }
 }

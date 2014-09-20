@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SleepTimer.Commands.ApplicationSetSuspendStateCommand">
+    <Position X="10.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAQAAAAAAAAAAAAEAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Commands\ApplicationSetSuspendStateCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SleepTimer.Commands.Hibernate">
+    <Position X="9.75" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\Hibernate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SleepTimer.Commands.PowerOffMonitor">
+    <Position X="2.25" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SleepTimer.Commands.PowerOffMonitor.MonitorPowerState">
+        <TypeIdentifier>
+          <NewMemberFileName>Commands\PowerOffMonitor.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAACAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\PowerOffMonitor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SleepTimer.Commands.ProcessShutdownCommand">
+    <Position X="5.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\ProcessShutdownCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SleepTimer.Commands.Restart">
+    <Position X="4.5" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\Restart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SleepTimer.Commands.Shutdown">
+    <Position X="7" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\Shutdown.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SleepTimer.Commands.Standby">
+    <Position X="12.25" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\Standby.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SleepTimer.Commands.ICommand">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\ICommand.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

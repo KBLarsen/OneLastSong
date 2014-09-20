@@ -2,14 +2,12 @@
 
 namespace SleepTimer.Commands
 {
-    public class Restart : ICommand
+    public class Restart : ProcessShutdownCommand
     {
-        private readonly string shutdownCommand = "shutdown";
-        private readonly string restartFlag = "/r";
-
-        public void Execute()
+        // string restartArgs = "/r";
+        public Restart()
+            : base("/r")
         {
-            Process.Start(shutdownCommand, restartFlag);            
         }
     }
 }
